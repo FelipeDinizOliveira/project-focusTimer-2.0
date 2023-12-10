@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --textColor: #323238;
+  --iconColor: #fff;
+  --backgroundIcon: #e1e1e6;
+  --activeIcon: #02799d;
+  font-size: 62.5%;
+  overflow: hidden;
+}
+
+#timer span {
+  color: var(--textColor);
+  text-align: center;
+  font-family: sans-serif;
+  font-size: clamp(8rem, 10vw ,12.6rem);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.body {
+
+}
+.container {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 50.0rem  50.0rem;
+  height: 100vh;
+}
+#timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--textColor);
+  text-align: center;
+  font-family: sans-serif;
+  
+  font-weight: bold;
+}
+.flex {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+#controls {
+}
+.ph {
+  font-size: 4.8rem;
+  border: none;
+  background: transparent;
+}
+
+#cardIcons {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 32px;
+}
+.sounds {
+  width: 13.8rem;
+  height: 15.2rem;
+  font-size: 5.8rem;
+  border: none;
+  background: var(--backgroundIcon);
+  border-radius: 2.4rem;
+  padding: 2rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.running .ph-play-circle,
+html:not(.running) .ph-pause-circle{
+  display: none;
+}
+button{
+  cursor: pointer;
+}
+
+
+@media (max-width: 800px) {
+ 
+    .container {
+      
+      grid-template-columns:max-content;
+      gap: 50px;
+    
+    }
+  
+    #cardIcons {
+      display: grid;
+      grid-template-columns: auto auto ;
+      gap: 32px;
+    }
+    .sounds {
+      width: 12.0rem;
+      height: 14.0rem;
+      font-size: 5.8rem;
+      border: none;
+      background: var(--backgroundIcon);
+      border-radius: 2.4rem;
+      padding: 2rem;
+    }
+  
+}

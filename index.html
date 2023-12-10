@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus timer version 2.0</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script type="module" src="main.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <section id="timer">
+
+      <div class="wrapperTimer">
+        <span id="minutes">25</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </div>
+
+
+      <div id="controls" class="flex">
+        <button class="ph ph-play-circle " id="ph-play-circle" data-action="toggleRunning">
+          <span class="sr-only">Iniciar contador</span>
+
+        </button>
+
+        <button class="ph ph-pause-circle" data-action="toggleRunning" id="ph-pause-circle">
+          <span class="sr-only">Pausar contador</span>
+
+
+        </button>
+        <button class="ph ph-stop-circle" id=" ph-stop-circle">
+          <span class="sr-only" data-action=""> parar contador </span>
+        </button>
+
+        <button class="ph ph-plus-circle" id="ph-plus-circle" data-action="">
+          <span class="sr-only">adicionar cinco minutos no contador</span>
+
+
+        </button>
+
+        <button class="ph ph-minus-circle" id="ph-minus-circle" data-action="">
+          <span class="sr-only">Remover cinco minutos no contador</span>
+
+        </button>
+
+
+        </button>
+      </div>
+    </section>
+    <section id="cardIcons" class="flex">
+      <button class="ph sounds ph-tree-evergreen flex" >
+        <span class="sr-only">Tocar som de floresta</span>
+
+      </button>
+
+      <button class="ph sounds ph-cloud-snow flex">
+        <span class="sr-only"> Tocar som de chuva</span>
+      </button>
+
+      <button class="ph sounds ph-storefront flex" data-action="set">
+        <span class="sr-only">Tocar som de cafeteria</span>
+
+
+      </button>
+
+      <button class="ph sounds ph-fire flex" data-action="reset">
+        <span class="sr-only">Tocar som de chamar</span>
+
+      </button>
+
+
+      </button>
+    </section>
+
+
+  </div>
+
+
+
+</body>
+
+</html>
