@@ -19,5 +19,5 @@
 <ul>
   <li> Layout do Figma.</li>
  
- <img src='assets/Focus.png' style='max-width: 500px'>
-  <img src='assets/Focusexe.png' style='max-width: 500px'>
+ <img src='assets/Focus.png' >
+  <img src='assets/focusexe.png'>
